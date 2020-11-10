@@ -1,0 +1,101 @@
+<!--  odile hamrioui 2020 
+    just to have some fun and try something
+    enjoy it
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz capitals</title>
+    <style>
+        *{margin: 0px;padding: 0px;box-sizing: border-box}
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #166F70;
+        }
+        .containerScore {
+            margin-bottom: 20px;
+        }
+        .containerScore p {
+            font-size: 14px;
+            color: #999;
+        }
+        .score {
+            color: #166F70;
+        }
+        .containerQuestion {
+            font-size: 18px;
+            color: #333;
+            max-width: 250px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .containerResponse {
+            margin-bottom: 30px;
+        }
+        .response {
+            width: 100%;
+            max-width: 250px;
+            border: none;
+            background: #ddd;
+            height: 45px;
+            padding-left: 10px;
+            font-size: 16px;
+            border-radius: 2px;
+            outline: none;
+        }
+        .button{
+            width: 100%;
+            max-width: 250px;
+            background: #166F70;
+            height: 40px;
+            border: none;
+            font-size: 14px;
+            color: #fff;
+            border-radius: 2px;
+            cursor: pointer;
+            outline: none;
+        }
+        .right {
+            background: #41E53E;
+        }
+        .false {
+            background: #F20505;
+        }
+
+    </style>
+</head>
+<body>
+    <span class="repOk" hidden>Good response</span>
+    <br>
+    <span class="repko" hidden>OUPS MAYBE NEXT TIME</span>
+    <br>
+    <h1>Capitals Quiz</h1>
+    <div class="containerScore">
+        <p>Your score is : <span id="score" class="score">40 pts</span></p>
+    </div>
+    <div class="containerQuestion">
+        <p>What is the capital of : <span id="question"></span></p>
+    </div>
+    <div class="containerResponse">
+        <input type="text" placeholder="Your answer" id="response" class="response">
+    </div>
+    <div class="containerButton">
+        
+        <button class="button" id="button">Submit <span class="nb"></span></button>
+        
+    </div>
+    <br>
+    <span class="resp" hidden></span>
+    <script src="jquery.js"></script>
+    <script src="ozil.js"></script>
+    
+</body>
+</html>
